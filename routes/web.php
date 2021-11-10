@@ -17,6 +17,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('about', function() {
-    return view('about');
-});
+//Use function to show 'about' html
+// Route::get('about', function() {
+//    return view('about');
+// });
+
+
+// Another way instead of using funcition
+// Pass a string of Controller and method name(with @)
+Route::get('about', [AboutController::class, 'index']);
