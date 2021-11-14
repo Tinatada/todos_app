@@ -25,6 +25,9 @@
                 margin-top: 0.8rem;
                 color: steelblue;
             }
+            
+            a:link {text-decoration: underline;}
+            a:hover {color: blue;}
         </style>
     </head>
     <body class="antialiased">
@@ -53,7 +56,8 @@
                 </div>
 
                 <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
-                    <p class="title">Todos App</p>
+                    <p class="title">
+                        <a href="/todos" target="_blank">Todos App</a></p>
                 </div>
 
                 <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">

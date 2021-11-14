@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+// use App\Http\Controllers\AboutController;
+use App\Http\Controllers\TodosController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,12 +19,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-//Use function to show 'about' html
-// Route::get('about', function() {
-//    return view('about');
-// });
-
-
-// Another way instead of using funcition
-// Pass a string of Controller and method name(with @)
-Route::get('about', [AboutController::class, 'index']);
+Route::get('/todos', [TodosController::class, 'index']);
